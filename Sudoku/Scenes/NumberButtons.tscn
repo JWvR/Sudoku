@@ -1,0 +1,161 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://Resources/Two_no_back.png" type="Texture" id=1]
+[ext_resource path="res://Resources/One_no_back.png" type="Texture" id=2]
+[ext_resource path="res://Resources/Seven_no_back.png" type="Texture" id=3]
+[ext_resource path="res://Resources/Three_no_back.png" type="Texture" id=4]
+[ext_resource path="res://Resources/Five_no_back.png" type="Texture" id=5]
+[ext_resource path="res://Resources/Nine_no_back.png" type="Texture" id=6]
+[ext_resource path="res://Resources/Eight_no_back.png" type="Texture" id=7]
+[ext_resource path="res://Resources/Four_no_back.png" type="Texture" id=8]
+[ext_resource path="res://Resources/Six_no_back.png" type="Texture" id=9]
+[ext_resource path="res://Scripts/NumberButtons.gd" type="Script" id=10]
+[ext_resource path="res://Resources/Six_pressed.png" type="Texture" id=11]
+[ext_resource path="res://Resources/Nine_pressed.png" type="Texture" id=12]
+[ext_resource path="res://Resources/Eight_pressed.png" type="Texture" id=13]
+[ext_resource path="res://Resources/Seven_pressed.png" type="Texture" id=14]
+[ext_resource path="res://Resources/Five_pressed.png" type="Texture" id=15]
+[ext_resource path="res://Resources/Four_pressed.png" type="Texture" id=16]
+[ext_resource path="res://Resources/Two_pressed.png" type="Texture" id=17]
+[ext_resource path="res://Resources/Three_pressed.png" type="Texture" id=18]
+[ext_resource path="res://Resources/One_pressed.png" type="Texture" id=19]
+[ext_resource path="res://Resources/Unknown_no_back.png" type="Texture" id=20]
+[ext_resource path="res://Resources/Unknown_pressed.png" type="Texture" id=21]
+
+[node name="NumberButtons" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="One" type="TextureButton" parent="."]
+margin_left = 128.0
+margin_top = 768.0
+margin_right = 192.0
+margin_bottom = 832.0
+toggle_mode = true
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 19 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Two" type="TextureButton" parent="."]
+margin_left = 256.0
+margin_top = 768.0
+margin_right = 320.0
+margin_bottom = 832.0
+toggle_mode = true
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Three" type="TextureButton" parent="."]
+margin_left = 384.0
+margin_top = 768.0
+margin_right = 448.0
+margin_bottom = 832.0
+toggle_mode = true
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Four" type="TextureButton" parent="."]
+margin_left = 512.0
+margin_top = 768.0
+margin_right = 576.0
+margin_bottom = 832.0
+toggle_mode = true
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Five" type="TextureButton" parent="."]
+margin_left = 640.0
+margin_top = 768.0
+margin_right = 704.0
+margin_bottom = 832.0
+toggle_mode = true
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Six" type="TextureButton" parent="."]
+margin_left = 128.0
+margin_top = 896.0
+margin_right = 192.0
+margin_bottom = 960.0
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Seven" type="TextureButton" parent="."]
+margin_left = 256.0
+margin_top = 896.0
+margin_right = 320.0
+margin_bottom = 960.0
+toggle_mode = true
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Eight" type="TextureButton" parent="."]
+margin_left = 384.0
+margin_top = 896.0
+margin_right = 448.0
+margin_bottom = 960.0
+toggle_mode = true
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Nine" type="TextureButton" parent="."]
+margin_left = 512.0
+margin_top = 896.0
+margin_right = 576.0
+margin_bottom = 960.0
+toggle_mode = true
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Erase" type="TextureButton" parent="."]
+margin_left = 648.0
+margin_top = 896.0
+margin_right = 712.0
+margin_bottom = 960.0
+toggle_mode = true
+texture_normal = ExtResource( 20 )
+texture_pressed = ExtResource( 21 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="toggled" from="One" to="." method="_on_One_toggled"]
+[connection signal="toggled" from="Two" to="." method="_on_Two_toggled"]
+[connection signal="toggled" from="Three" to="." method="_on_Three_toggled"]
+[connection signal="toggled" from="Four" to="." method="_on_Four_toggled"]
+[connection signal="toggled" from="Five" to="." method="_on_Five_toggled"]
+[connection signal="toggled" from="Six" to="." method="_on_Six_toggled"]
+[connection signal="toggled" from="Seven" to="." method="_on_Seven_toggled"]
+[connection signal="toggled" from="Eight" to="." method="_on_Eight_toggled"]
+[connection signal="toggled" from="Nine" to="." method="_on_Nine_toggled"]
+[connection signal="pressed" from="Erase" to="." method="_on_Erase_pressed"]
